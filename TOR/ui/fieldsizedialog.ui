@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+<class>FieldSizeDialog</class>
+<widget class="QDialog" name="FieldSizeDialog">
+<property name="geometry">
+<rect>
+<x>0</x>
+<y>0</y>
+<width>802</width>
+<height>594</height>
+</rect>
+</property>
+<property name="windowTitle">
+<string>Spielfeld</string>
+</property>
+<layout class="QHBoxLayout" name="horizontalLayout_3">
+<item>
+<layout class="QVBoxLayout" name="verticalLayout">
+<item>
+<layout class="QHBoxLayout" name="horizontalLayout">
+<item>
+<layout class="QVBoxLayout" name="verticalLayout_2">
+<property name="sizeConstraint">
+<enum>QLayout::SetDefaultConstraint</enum>
+</property>
+<property name="leftMargin">
+<number>0</number>
+</property>
+<item>
+<layout class="QHBoxLayout" name="horizontalLayout_2">
+<property name="leftMargin">
+<number>0</number>
+</property>
+<property name="bottomMargin">
+<number>0</number>
+</property>
+<item>
+<widget class="QListWidget" name="fieldListWidget">
+<property name="contextMenuPolicy">
+<enum>Qt::CustomContextMenu</enum>
+</property>
+<item>
+<property name="text">
+<string>Neues Element</string>
+</property>
+</item>
+</widget>
+</item>
+</layout>
+</item>
+<item>
+<widget class="QGraphicsView" name="fieldView">
+<property name="contextMenuPolicy">
+<enum>Qt::NoContextMenu</enum>
+</property>
+<property name="verticalScrollBarPolicy">
+<enum>Qt::ScrollBarAlwaysOff</enum>
+</property>
+<property name="horizontalScrollBarPolicy">
+<enum>Qt::ScrollBarAlwaysOff</enum>
+</property>
+</widget>
+</item>
+<item>
+<widget class="QPushButton" name="pushButtonAdopt">
+<property name="text">
+<string>Liste speichern</string>
+</property>
+</widget>
+</item>
+</layout>
+</item>
+</layout>
+</item>
+</layout>
+</item>
+<item>
+<layout class="QVBoxLayout" name="verticalLayout_4">
+<property name="topMargin">
+<number>0</number>
+</property>
+<item>
+<layout class="QFormLayout" name="EditForm">
+<property name="fieldGrowthPolicy">
+<enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+</property>
+<item row="1" column="0">
+<widget class="QLabel" name="labelFieldName">
+<property name="text">
+<string>Feldtypname:</string>
+</property>
+</widget>
+</item>
+<item row="1" column="1">
+<widget class="QLineEdit" name="editFieldName"/>
+</item>
+<item row="2" column="0">
+<widget class="QLabel" name="label_3">
+<property name="font">
+<font>
+<pointsize>10</pointsize>
+<weight>75</weight>
+<bold>true</bold>
+</font>
+</property>
+<property name="text">
+<string>Abmessungen in cm</string>
+</property>
+</widget>
+</item>
+<item row="3" column="0">
+<widget class="QLabel" name="labelFieldLength">
+<property name="text">
+<string>Länge:</string>
+</property>
+</widget>
+</item>
+<item row="3" column="1">
+<widget class="QSpinBox" name="spinBoxFieldLength">
+<property name="minimum">
+<number>1</number>
+</property>
+<property name="maximum">
+<number>15000</number>
+</property>
+</widget>
+</item>
+<item row="4" column="0">
+<widget class="QLabel" name="labelFieldWidth">
+<property name="text">
+<string>Breite:</string>
+</property>
+</widget>
+</item>
+<item row="4" column="1">
+<widget class="QSpinBox" name="spinBoxFieldWidth">
+<property name="minimum">
+<number>1</number>
+</property>
+<property name="maximum">
+<number>9000</number>
+</property>
+</widget>
+</item>
+<item row="5" column="0">
+<widget class="QLabel" name="labelLineWidth">
+<property name="text">
+<string>Linienbreite:</string>
+</property>
+</widget>
+</item>
+<item row="5" column="1">
+<widget class="QSpinBox" name="spinBoxLineWidth">
+<property name="minimum">
+<number>1</number>
+</property>
+<property name="maximum">
+<number>15</number>
+</property>
+</widget>
+</item>
+<item row="6" column="0">
+<widget class="QLabel" name="labelPenaltyMarkSize">
+<property name="text">
+<string>Strafstoßpunktgröße:</string>
+</property>
+</widget>
+</item>
+<item row="6" column="1">
+<widget class="QSpinBox" name="spinBoxPenaltyMarkSize">
+<property name="minimum">
+<number>1</number>
+</property>
+<property name="maximum">
+<number>1830</number>
+</property>
+</widget>
+</item>
+<item row="7" column="0">
+<widget class="QLabel" name="labelPenaltyAreaLength">
+<property name="text">
+<string>Strafraumlänge:</string>
+</property>
+</widget>
+</item>
+<item row="7" column="1">
+<widget class="QSpinBox" name="spinBoxPenaltyAreaLength">
+<property name="minimum">
+<number>1</number>
+</property>
+<property name="maximum">
+<number>1650</number>
+</property>
+</widget>
+</item>
+<item row="8" column="0">
+<widget class="QLabel" name="labelPenaltyAreaWidth">
+<property name="text">
+<string>Strafraumbreite:</string>
+</property>
+</widget>
+</item>
+<item row="8" column="1">
+<widget class="QSpinBox" name="spinBoxPenaltyAreaWidth">
+<property name="minimum">
+<number>1</number>
+</property>
+<property name="maximum">
+<number>2020</number>
+</property>
+</widget>
+</item>
+<item row="9" column="0">
+<widget class="QLabel" name="labelPenaltyMarkDistance">
+<property name="text">
+<string>Strafstoßpunktabstand:</string>
+</property>
+</widget>
+</item>
+<item row="9" column="1">
+<widget class="QSpinBox" name="spinBoxPenaltyMarkDistance">
+<property name="minimum">
+<number>1</number>
+</property>
+<property name="maximum">
+<number>1100</number>
+</property>
+</widget>
+</item>
+<item row="10" column="0">
+<widget class="QLabel" name="labelCenterCircleDiameter">
+<property name="text">
+<string>Mittelkreisdurchmesser:</string>
+</property>
+</widget>
+</item>
+<item row="10" column="1">
+<widget class="QSpinBox" name="spinBoxCenterCircleDiameter">
+<property name="minimum">
+<number>1</number>
+</property>
+<property name="maximum">
+<number>1830</number>
+</property>
+</widget>
+</item>
+<item row="11" column="0">
+<widget class="QLabel" name="labelBoarderStripWidth">
+<property name="text">
+<string>Spielfeldrandbreite:</string>
+</property>
+</widget>
+</item>
+<item row="11" column="1">
+<widget class="QSpinBox" name="spinBoxBorderStripWidth">
+<property name="minimum">
+<number>1</number>
+</property>
+<property name="maximum">
+<number>1000</number>
+</property>
+</widget>
+</item>
+<item row="12" column="0">
+<widget class="QLabel" name="labelGoalRoom">
+<property name="text">
+<string>Torraumtiefe:</string>
+</property>
+</widget>
+</item>
+<item row="12" column="1">
+<widget class="QSpinBox" name="spinBoxGoalRoom">
+<property name="minimum">
+<number>1</number>
+</property>
+<property name="maximum">
+<number>550</number>
+</property>
+</widget>
+</item>
+<item row="13" column="0">
+<widget class="QLabel" name="labelGoalWidth">
+<property name="text">
+<string>Torbreite:</string>
+</property>
+</widget>
+</item>
+<item row="13" column="1">
+<widget class="QSpinBox" name="spinBoxGoalWidth">
+<property name="minimum">
+<number>1</number>
+</property>
+<property name="maximum">
+<number>732</number>
+</property>
+</widget>
+</item>
+<item row="14" column="0">
+<widget class="QLabel" name="labelGoalPostWidth">
+<property name="text">
+<string>Torpfostenbreite:</string>
+</property>
+</widget>
+</item>
+<item row="14" column="1">
+<widget class="QSpinBox" name="spinBoxGoalPostSize">
+<property name="minimum">
+<number>1</number>
+</property>
+<property name="maximum">
+<number>15</number>
+</property>
+</widget>
+</item>
+<item row="15" column="0">
+<widget class="QLabel" name="labelBallSize">
+<property name="text">
+<string>Ballgröße:</string>
+</property>
+</widget>
+</item>
+<item row="15" column="1">
+<widget class="QSpinBox" name="spinBoxBallSize">
+<property name="minimum">
+<number>1</number>
+</property>
+<property name="maximum">
+<number>100</number>
+</property>
+</widget>
+</item>
+<item row="16" column="0">
+<widget class="QLabel" name="label">
+<property name="text">
+<string>Spielerbreite:</string>
+</property>
+</widget>
+</item>
+<item row="16" column="1">
+<widget class="QSpinBox" name="spinBoxPlayerSize">
+<property name="minimum">
+<number>1</number>
+</property>
+<property name="maximum">
+<number>100</number>
+</property>
+</widget>
+</item>
+<item row="17" column="0">
+<widget class="QLabel" name="label_2">
+<property name="font">
+<font>
+<pointsize>10</pointsize>
+<weight>75</weight>
+<bold>true</bold>
+</font>
+</property>
+<property name="text">
+<string>Sonstige Angaben:</string>
+</property>
+</widget>
+</item>
+<item row="18" column="0">
+<widget class="QLabel" name="labelTeamSize">
+<property name="text">
+<string>Spieleranzahl:</string>
+</property>
+</widget>
+</item>
+<item row="18" column="1">
+<widget class="QSpinBox" name="spinBoxTeamSize">
+<property name="minimum">
+<number>1</number>
+</property>
+<property name="maximum">
+<number>11</number>
+</property>
+</widget>
+</item>
+<item row="20" column="0">
+<widget class="QLabel" name="labelHalftimeDuaration">
+<property name="text">
+<string>Halbzeitlänge (in min):</string>
+</property>
+</widget>
+</item>
+<item row="20" column="1">
+<widget class="QSpinBox" name="spinBoxHalftimeDuration">
+<property name="minimum">
+<number>1</number>
+</property>
+<property name="maximum">
+<number>45</number>
+</property>
+</widget>
+</item>
+<item row="21" column="0">
+<widget class="QPushButton" name="pushButtonGetValues">
+<property name="text">
+<string>Werte übernehmen</string>
+</property>
+</widget>
+</item>
+</layout>
+</item>
+</layout>
+</item>
+</layout>
+</widget>
+<resources/>
+<connections/>
+</ui>

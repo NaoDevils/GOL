@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1191</width>
+    <height>660</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TaktikTool</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="1" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="maximumSize">
+         <size>
+          <width>60</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Feldtyp:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox">
+        <item>
+         <property name="text">
+          <string>SPL2013</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>&lt;Neue Feldgröße&gt;</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="3" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tabField">
+       <attribute name="title">
+        <string>Feld</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="2" column="0">
+         <widget class="QGraphicsView" name="fieldView">
+          <property name="backgroundBrush">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>0</red>
+             <green>108</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </property>
+          <property name="foregroundBrush">
+           <brush brushstyle="NoBrush">
+            <color alpha="255">
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </property>
+          <property name="cacheMode">
+           <set>QGraphicsView::CacheNone</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Hinzufügen:</string>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignHCenter">
+           <widget class="QCommandLinkButton" name="addPlayer_Button">
+            <property name="toolTip">
+             <string>Spieler hinzufügen</string>
+            </property>
+            <property name="text">
+             <string>Spieler</string>
+            </property>
+            <property name="icon">
+             <iconset resource="grafiken/grafiken.qrc">
+              <normaloff>:/grafiken/football16.svg</normaloff>:/grafiken/football16.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignHCenter">
+           <widget class="QCommandLinkButton" name="addOpponent_Button">
+            <property name="toolTip">
+             <string>Gegner hinzufügen</string>
+            </property>
+            <property name="text">
+             <string>Gegner</string>
+            </property>
+            <property name="icon">
+             <iconset resource="grafiken/grafiken.qrc">
+              <normaloff>:/grafiken/football18.svg</normaloff>:/grafiken/football18.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignHCenter">
+           <widget class="QCommandLinkButton" name="addBall_Button">
+            <property name="maximumSize">
+             <size>
+              <width>60</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>Ball hinzufügen</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="grafiken/grafiken.qrc">
+              <normaloff>:/grafiken/football28.svg</normaloff>:/grafiken/football28.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignHCenter">
+           <widget class="QCommandLinkButton" name="addArrow_Button">
+            <property name="maximumSize">
+             <size>
+              <width>60</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>Pfad ziehen</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="grafiken/grafiken.qrc">
+              <normaloff>:/grafiken/arrow482.svg</normaloff>:/grafiken/arrow482.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignHCenter">
+           <widget class="QCommandLinkButton" name="addGroup_Button">
+            <property name="maximumSize">
+             <size>
+              <width>60</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>Gruppe definieren</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="grafiken/grafiken.qrc">
+              <normaloff>:/grafiken/substitution.svg</normaloff>:/grafiken/substitution.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="line_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="line">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignHCenter">
+           <widget class="QCommandLinkButton" name="delete_Button">
+            <property name="maximumSize">
+             <size>
+              <width>60</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>Auswahl löschen</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="grafiken/grafiken.qrc">
+              <normaloff>:/grafiken/trash30.svg</normaloff>:/grafiken/trash30.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabEditor">
+       <attribute name="title">
+        <string>JSON</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QPlainTextEdit" name="plainTextEdit"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDatei">
+    <property name="title">
+     <string>Datei</string>
+    </property>
+    <addaction name="actionNeu"/>
+    <addaction name="action_ffnen"/>
+    <addaction name="actionSpeichern"/>
+    <addaction name="actionSpeichern_als"/>
+   </widget>
+   <widget class="QMenu" name="menuHinzuf_gen">
+    <property name="title">
+     <string>Hinzufügen</string>
+    </property>
+    <addaction name="actionSpieler"/>
+    <addaction name="actionGegner"/>
+    <addaction name="actionBall"/>
+    <addaction name="actionPfad"/>
+    <addaction name="actionGruppe"/>
+    <addaction name="separator"/>
+    <addaction name="actionSpielfeld"/>
+   </widget>
+   <addaction name="menuDatei"/>
+   <addaction name="menuHinzuf_gen"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="windowTitle">
+    <string>Toolbar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QDockWidget" name="tafelauswahlDock">
+   <property name="windowTitle">
+    <string>Tafelauswahl</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QGridLayout" name="gridLayout_5">
+     <item row="0" column="0">
+      <widget class="QListWidget" name="listWidget"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="tabellenDock">
+   <property name="windowTitle">
+    <string>Informationstabelle</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_2">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QTreeWidget" name="treeWidget">
+       <column>
+        <property name="text">
+         <string notr="true">1</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actionSpieler">
+   <property name="text">
+    <string>Spieler</string>
+   </property>
+  </action>
+  <action name="actionGegner">
+   <property name="text">
+    <string>Gegner</string>
+   </property>
+  </action>
+  <action name="actionBall">
+   <property name="text">
+    <string>Ball</string>
+   </property>
+  </action>
+  <action name="actionPfad">
+   <property name="text">
+    <string>Pfad</string>
+   </property>
+  </action>
+  <action name="actionGruppe">
+   <property name="text">
+    <string>Gruppe</string>
+   </property>
+  </action>
+  <action name="actionSpielfeld">
+   <property name="text">
+    <string>Spielfeld</string>
+   </property>
+  </action>
+  <action name="actionNeu">
+   <property name="text">
+    <string>Neu</string>
+   </property>
+  </action>
+  <action name="action_ffnen">
+   <property name="text">
+    <string>Öffnen</string>
+   </property>
+  </action>
+  <action name="actionSpeichern">
+   <property name="text">
+    <string>Speichern</string>
+   </property>
+  </action>
+  <action name="actionSpeichern_als">
+   <property name="text">
+    <string>Speichern als</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="grafiken/grafiken.qrc"/>
+ </resources>
+ <connections/>
+</ui>

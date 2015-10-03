@@ -1,0 +1,31 @@
+<RCC>
+    <qresource prefix="/">
+        <file>add.svg</file>
+        <file>arrow.svg</file>
+        <file>ball.svg</file>
+        <file>copy.svg</file>
+        <file>cut.svg</file>
+        <file>field.svg</file>
+        <file>football27.svg</file>
+        <file>football58.svg</file>
+        <file>fullscreen.svg</file>
+        <file>group.svg</file>
+        <file>handdrawn.svg</file>
+        <file>new.svg</file>
+        <file>open.svg</file>
+        <file>opponent.svg</file>
+        <file>paste.svg</file>
+        <file>pdf.svg</file>
+        <file>player.svg</file>
+        <file>plus.svg</file>
+        <file>redo.svg</file>
+        <file>save.svg</file>
+        <file>saveas.svg</file>
+        <file>substitution.svg</file>
+        <file>svg.svg</file>
+        <file>taktik.svg</file>
+        <file>taktiksmall.svg</file>
+        <file>trash.svg</file>
+        <file>undo.svg</file>
+    </qresource>
+</RCC>

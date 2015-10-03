@@ -1,0 +1,238 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "name": "Taktikmappe",
+    "type": "array",
+    "items": {
+        "name": "Taktiktafel",
+        "type": "object",
+        "properties": {
+            "PreConditions": {
+                "name": "Vorbediendung",
+                "type": "object",
+                "properties": {
+                    "activeGoalie": {
+                        "name": "Aktiver Torwart",
+                        "type": "boolean"
+                    },
+                    "activeOpponentGoalie": {
+                        "name": "Aktiver gegnerischer Torwart",
+                        "type": "boolean"
+                    },
+                    "activeOpponentMax": {
+                        "name": "Maximalanzahl der gegnerischen Spieler",
+                        "type": "number"
+                    },
+                    "activeOpponentMin": {
+                        "name": "Minimalanzahl der gegnerischen Spieler",
+                        "type": "number"
+                    },
+                    "activePlayerMax": {
+                        "name": "Maximalanzahl der eigenen Spieler",
+                        "type": "number"
+                    },
+                    "activePlayerMin": {
+                        "name": "Minimalanzahl der gegnerischen Spieler",
+                        "type": "number"
+                    },
+                    "difGoalsMax": {
+                        "name": "Maximale Tordifferenz",
+                        "type": "number"
+                    },
+                    "difGoalsMin": {
+                        "name": "Minimale Tordifferenz",
+                        "type": "number"
+                    },
+                    "fieldtype": {
+                        "name": "Spielfeldtyp",
+                        "type": "string"
+                    },
+                    "gameTimeMax": {
+                        "name": "Maximale Spielminute",
+                        "type": "number"
+                    },
+                    "gameTimeMin": {
+                        "name": "Minimale Spielminute",
+                        "type": "number"
+                    },
+                    "gameTimeRemainingMax": {
+                        "name": "Maximale Restspielzeit",
+                        "type": "number"
+                    },
+                    "gameTimeRemainingMin": {
+                        "name": "Minimale Restspielzeit",
+                        "type": "number"
+                    },
+                    "gamemode": {
+                        "name": "Aktuelle Spielstatus",
+                        "type": "string"
+                    },
+                    "halftime": {
+                        "name": "Aktuelle Halbzeit",
+                        "type": "string"
+                    },
+                    "name": {
+                        "name": "Name der Tafel",
+                        "type": "string"
+                    },
+                    "note": {
+                        "name": "Notizen zur Tafel",
+                        "type": "string"
+                    },
+                    "oppGoalsMax": {
+                        "name": "Maximale Anzahl gegnerischer Tore",
+                        "type": "number"
+                    },
+                    "oppGoalsMin": {
+                        "name": "Minimale Anzahl gegnerischer Tore",
+                        "type": "number"
+                    },
+                    "ownGoalsMax": {
+                        "name": "Maximale Anzahl eigener Tore",
+                        "type": "number"
+                    },
+                    "ownGoalsMin": {
+                        "name": "Minimale Anzahl eigener Tore",
+                        "type": "number"
+                    }
+                },
+                "required": [
+                    "fieldtype",
+                    "name"
+                ]
+            },
+            "Ball": {
+                "name": "Ball",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "name": "Ball",
+                        "type": "string"
+                    },
+                    "x": {
+                        "name": "Aktuelle x-Koordinate",
+                        "type": "number"
+                    },
+                    "y": {
+                        "name": "Aktuelle y-Koordinate",
+                        "type": "number"
+                    },
+                    "xn": {
+                        "name": "Zukuenftige x-Koordinate",
+                        "type": "number"
+                    },
+                    "yn": {
+                        "name": "Zukuenftige y-Koordinate",
+                        "type": "number"
+                    }
+                },
+                "required": [
+                    "name",
+                    "x",
+                    "y"
+                ]
+            },
+            "Players": {
+                "name": "Spieler",
+                "type": "array",
+                "items": {
+                    "name": "Spieler",
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "name": "Spieler",
+                            "type": "string"
+                        },
+                        "x": {
+                            "name": "Aktuelle x-Koordinate",
+                            "type": "number"
+                        },
+                        "y": {
+                            "name": "Aktuelle y-Koordinate",
+                            "type": "number"
+                        },
+                        "xn": {
+                            "name": "Zukuenftige x-Koordinate",
+                            "type": "number"
+                        },
+                        "yn": {
+                            "name": "Zukuenftige y-Koordinate",
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "name",
+                        "x",
+                        "y"
+                    ]
+                }
+            },
+            "Opponents": {
+                "name": "Gegner",
+                "type": "array",
+                "items": {
+                    "name": "Gegner",
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "name": "Gegner",
+                            "type": "string"
+                        },
+                        "x": {
+                            "name": "Aktuelle x-Koordinate",
+                            "type": "number"
+                        },
+                        "y": {
+                            "name": "Aktuelle y-Koordinate",
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "name",
+                        "x",
+                        "y"
+                    ]
+                }
+            },
+            "Groups": {
+                "name": "Gruppen",
+                "type": "array",
+                "items": {
+                    "name": "Gruppe",
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "name": "Gegner",
+                            "type": "string"
+                        },
+                        "leader": {
+                            "name": "Gruppenleiter",
+                            "type": "string"
+                        },
+                        "follower": {
+                            "name": "Folgenden",
+                            "type": "string"
+                        },
+                        "dX": {
+                            "name": "Abstand auf der x-Achse",
+                            "type": "number"
+                        },
+                        "dY": {
+                            "name": "Abstand auf der y-Achse",
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "name",
+                        "leader",
+                        "follower",
+                        "dX",
+                        "dY"
+                    ]
+                }
+            }
+        },
+        "required": [
+            "PreConditions"
+        ]
+    }
+}
